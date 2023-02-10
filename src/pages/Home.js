@@ -1,9 +1,8 @@
-import { HeaderHome } from "../components/layout/HeaderHome";
 
 export const HomeUser = () => {
   return(
     <>
-    <HeaderHome  text="Mundo"/>
+      <h1>Home</h1>
     </>
   );
 }
