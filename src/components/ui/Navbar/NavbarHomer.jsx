@@ -18,7 +18,7 @@ export const NavbarHomer = () => {
         {
         Items.map((item) => (
           <li className={Style.li}>
-            <Link to={item.url} className={Style.link}>{item.title}</Link>
+            <a to={item.url} className={Style.link}>{item.title}</a>
           </li>
         ))
         }
