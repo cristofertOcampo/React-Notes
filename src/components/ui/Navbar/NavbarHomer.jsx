@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+
 import Style from "./navBar.module.css"
+
 const imgLogo = "https://res.cloudinary.com/dqzq2hemz/image/upload/v1676060067/Notas-react/Pair_programming_zv0zq8.png"
+
 const Items = [
   { title: "Home", url: "/" },
-  { title: "About us", url:"/AboutUs"}
+  { title: "Counter", url:"/Counter"},
+  { title: "Greeat", url:"/Greeat"},
+  { title: "Change Color", url:"/ChangeColor"},
 ];
 
 
@@ -18,7 +23,7 @@ export const NavbarHomer = () => {
         {
         Items.map((item) => (
           <li className={Style.li}>
-            <a to={item.url} className={Style.link}>{item.title}</a>
+            <Link to={item.url} className={Style.link}>{item.title}</Link>
           </li>
         ))
         }

@@ -1,22 +1,22 @@
-import './App.css';
-import { HomeUser } from './pages/Home';
+import {Route, Routes } from "react-router-dom";
 import { HeaderHome } from './components/layout/header/HeaderHome';
-import { AboutUS } from './pages/AboutUS';
+import { Footer } from "./components/layout/footer/Footer";
+import { HomeUser } from './pages/home/Home';
+import { Counter } from './pages/Counter/Counter';
 import { ChangeColor } from './pages/ChangeColor/ChangeColor';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import './App.css';
 
 
 function App() {
   return (
     <>
     <HeaderHome />
-    <Router>
       <Routes>
         <Route path='/' element={<HomeUser />}></Route>
-        <Route path='/AboutUs' element={<AboutUS />}></Route>
+        <Route path='/Counter' element={<Counter />}></Route>
         <Route path='/ChangeColor' element={<ChangeColor></ChangeColor>} ></Route>
       </Routes>
-    </Router>
+      <Footer />
     </>
   );
 }
