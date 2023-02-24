@@ -9,8 +9,9 @@ const Items = [
   { title: "Counter", url:"/Counter"},
   { title: "Greeat", url:"/Greeat"},
   { title: "Change Color", url:"/ChangeColor"},
+  { title: "Tweet Generator", url:"/TweetGenerator"},
+  
 ];
-
 
 export const NavbarHomer = () => {
 
