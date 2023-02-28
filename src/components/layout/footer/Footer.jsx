@@ -7,15 +7,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 
-
-
-{/*
-
- */
-}
-
-
-
 export const Footer = () => {
 
   const Icons = [
@@ -25,9 +16,6 @@ export const Footer = () => {
     { ic: <FaTwitter />, url: "https://twitter.com/?lang=es" },
     { ic: <FaFacebook />, url: "https://es-la.facebook.com/" }
   ]
-
-  // const Icons = [<FaFacebook />, <FaTwitter />, <FaLinkedinIn />]
-
 
   return (
     <footer className={Style.footer}>
