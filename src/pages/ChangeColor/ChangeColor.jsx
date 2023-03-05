@@ -1,14 +1,8 @@
 import React, { useState, useRef } from 'react'
 import Style from './ChangeColor.module.css'
 
-
-
-
 export const ChangeColor = () => {
-
-  // const [color, setColor] = useState('object');
   const container = useRef();
-
   const handleChangeColor = event => container.current.style.backgroundColor = event.target.value;
 
   return (
